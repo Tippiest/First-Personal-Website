@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Investing</title>
+    </head>
+
+    <h1>Money,Money, Money</h1>
+    <body>
+        <p>Every likes at least some money and I have suprisingly accumalated the skills to grow and preserve it even though I eat crayons.
+             What, grow money!?
+             Yes, and as I'm not to fill this space on my webpage with lectural notes on investing principles,
+             I will say that I do quite enjoy the many intricate apects of investing.
+             For example, check out what happens if you invest $300/month in the commonly invested in S&P500 over a span of 30 years at an 8% annual return compounded.
+             You can play around with the numbers and see what you would be left with. Disclaimer: Inflation exists soo...yeah.
+        </p>
+        <!--Create an investment calculator for the stock market. Compound interest calculator more like.-->
+
+        <button type="button"  onclick="oneHundo()"> $100/month </button>
+        <button onclick="twoHundo()"> $200/month</button>
+        <button onclick="threeHundo()"> $300/month</button>
+        <button onclick="fourHundo()"> $400/month </button>
+        <button onclick="reset()">Reset</button>
+
+        <div id="invest">
+            <p id="one"></p>
+            <p id="two"></p>
+            <p id="three"></p>
+            <p id="four"></p>
+        </div>
+
+
+        <script>
+            function oneHundo(){
+                document.getElementById("one").innerHTML ="100/month -> $141,761.32";
+            }
+
+            function twoHundo(){
+                document.getElementById("two").innerHTML ="$200/month -> $283,522.65";
+            }
+
+            function threeHundo(){
+                document.getElementById("three").innerHTML ="$300/month -> $425,283.97";
+            }
+
+            function fourHundo(){
+                document.getElementById("four").innerHTML ="$400/month -> $567,045.30";
+            }
+
+            function reset(){
+                document.getElementById("one").innerHTML="";
+                document.getElementById("two").innerHTML="";
+                document.getElementById("three").innerHTML="";
+                document.getElementById("four").innerHTML="";
+            }
+        </script>
+
+
+        <!--Have a menu on the page to navigate pages-->
+        <div id="footer">
+            <dd class="menu"><a href="index.html">Home</a></li>
+            <dd class="menu"><a href="gaming.html">Gaming</a></li>
+            <dd class="menu"><a href="music.html">Music</a></li>
+            <dd class="menu"><a href="topsecret.html">Top Secret</a></li>
+        </div>
+    </body>
+</html>

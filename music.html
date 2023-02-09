@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Music</title>
+    </head>
+
+    <script>
+        function playBass(){
+            var Bass = new Audio("Website resources/sounds/bass-kick_Dsharp.mp3");
+            Bass.play();
+        }
+
+        function playSnare(){
+            var Harm = new Audio("Website resources/sounds/punchy-drum-bass-snare.wav");
+            Harm.play();
+        }
+
+        function playClap(){
+            var Kick = new Audio("Website resources/sounds/loose-riddim-clap.wav");
+            Kick.play();
+        }
+    </script>
+
+    
+    <h1>Harmonic Melodies</h1>
+
+    <body>
+        I love hearing and making music! How about you give it a try and make a beat?
+        <!--Create an interactive music maker-->
+        <!--Collect file for a handful of notes and or beats and loop them in order for them to be chained-->
+
+
+
+        <input type="submit" onclick="playBass();" value="Bass">
+
+
+        <input type="submit" onclick="playSnare();" value="Snare">
+
+
+        <input type="submit" onclick="playClap();" value="Clap">
+
+        <!--Have a navigation menu for the pages-->
+
+        <div id="footer" >
+            <dt class="menu"><a href="index.html">Home</a></li>
+            <dt class="menu"><a href="gaming.html">Gaming</a></li>
+            <dt class="menu"><a href="investing.html">Investing</a></li>
+            <dt class="menu"><a href="topsecret.html">Top Secret</a></li>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+
+
+/* Change the cursor on the gaming page to a alien ufo*/
+
+#game {
+    margin: 0;
+    height: 100vh;
+    cursor:url('Website resources/pictures&gifs/Alien-spaceship.svg'),
+     url('Website resources/pictures&gifs/Alien-spaceship.cur'),
+      url('Website resources/pictures&gifs/Alien-spaceship.png'), crosshair;
+}
+
+#footer{
+    position:relative;
+    left:50%;
+    bottom: 0%;
+}
+
+#header{
+    font-size: 20px;
+    margin-left:3%;
+    margin-top: 10%;
+    margin-bottom: 1%;
+}
+
+#acc{
+    margin-bottom:1%;
+}
+
+#accBody1{
+    border-left-style:solid;
+    border-right-style: solid;
+    background-color: rgba(0,0,255, 0.4);
+    color: black;
+
+}
+
+#accBody2{
+    border-left-style:solid;
+    border-right-style: solid;
+    background-color: rgba(200, 70, 0, 0.8);
+    color: black;
+
+}
+
+#accBody3{
+    border-left-style:solid;
+    border-right-style: solid;
+    background-color: rgba(0,150,0, 0.8);
+    color: black;
+
+}
+
+h1{
+    text-shadow: 2px 2px;
+}
+
+#Moo{
+    margin-top:0.5%;
+}
+
+#invest{
+    margin-bottom: 1%;
+}
